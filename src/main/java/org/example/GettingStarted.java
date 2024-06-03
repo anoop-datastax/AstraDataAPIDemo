@@ -14,10 +14,10 @@ import static com.datastax.astra.client.model.SimilarityMetric.EUCLIDEAN;
 public class GettingStarted {
     public static void main(String[] args) {
         // Initializing client with a token
-        DataAPIClient client = new DataAPIClient("AstraCS:hLFsBeydAQZeHvqZOEogguYQ:56537c675ebc4d78d196a1a2656b7e20611a6812ac1a38821828b1c7608d4884");
+        DataAPIClient client = new DataAPIClient("you Astra Token");
 
         // Accessing the Database through the HTTP endpoint
-        Database db = client.getDatabase("https://edb9014a-89a8-4396-9bd3-1053ce934251-us-east-2.apps.astra.datastax.com");
+        Database db = client.getDatabase("https:astra.endpoint.from.astradb");
 
         // Create collection with vector support
         Collection<Document> col = db.createCollection("demo", 2, EUCLIDEAN);
